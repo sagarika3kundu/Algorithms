@@ -1,3 +1,4 @@
+// Given a sorted array and a number X, search two elements of array s.t. their sum is X. 
 #include <stdio.h>
 #include<stdlib.h>
  
@@ -20,9 +21,9 @@ int main(void) {
 				break;
 			}
 		else if(arr[low]+arr[high]<x)
-			low++;
+			low++;   //increasing the value of sum
 		else
-			high--;
+			high--;  //decreasing the value of sum
 	}
 	if(flag==0)
 		printf("the sum could not be done\n");
