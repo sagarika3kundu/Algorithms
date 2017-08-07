@@ -10,3 +10,5 @@ bitonic.c--------  A Bitonic Sequence is a sequence of numbers which is first st
 invPairs.c------- Apply Merge Sort to count inversion pairs in an array. Two elements a[i] and a[j] form an inversion pair if a[i] > a[j] and i < j. Example: The sequence 2, 4, 1, 3, 5 has three inversions (2, 1), (4, 1), (4, 3). 
 
 sumBin.c---------  Given a sorted array and a number X, search two elements of array s.t. their sum is X. 
+
+twoDimArr.c------ Apply Binary Search on 2D NxM array (A) having numbers stored in non-deceasing order under row-major scanning. Hint: k-th element = A[k/M][k % M]  4
