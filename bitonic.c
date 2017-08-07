@@ -1,3 +1,4 @@
+//find bitonic point
 #include <stdio.h>
 #include<stdlib.h>
 #define min(a,b) (a<b?a:b);
@@ -9,7 +10,7 @@ int bitonic(int arr[], int low, int high) {
 	if (arr[mid - 1] < arr[mid] && arr[mid] > arr[mid+1])       
 	return mid; 
 	// Decide whether we need to go to left half or right half     
-	if (arr[mid] < arr[mid+1])       
+	if (arr[mid] < arr[mid+1])       //implies we are in ascending part
 	return bitonic(arr, mid+1,high);    
 	return bitonic(arr, low, mid-1); 
 }   
