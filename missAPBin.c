@@ -17,7 +17,7 @@ int findMiss(int arr[], int low, int high) {
 	// Decide whether we need to go to left half or right half     
 	//cal the correct value at mid using a+(n-1)d formula
 	d=min(arr[mid] - arr[mid - 1] , arr[mid+1] - arr[mid]);
-	term=arr[low]+(mid)*d;
+	term=arr[0]+(mid)*d;
 	if (arr[mid] == term)       
 	return findMiss(arr, mid+1,high);    
 	return findMiss(arr, low, mid-1); 
