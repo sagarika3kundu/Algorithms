@@ -1,10 +1,12 @@
+//A sorted array is rotated clockwise at some unknown point, find the minimum element in it.
 #include <stdio.h>
 #include<stdlib.h>
 int findMin(int arr[], int low, int high) {     
 	// This condition is needed to handle the case when array is not     
 	// rotated at all     
 	if (high < low)  return arr[0];       
-	// If there is only one element left     
+	// If there is only one element left  
+	//if we reach the edge, we will not have the previous element to compare.So we need this condition.
 	if (high == low) return arr[low];      
 	// Find mid    
 	int mid = (high + low)/2;        
