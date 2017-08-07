@@ -1,3 +1,6 @@
+//Apply Merge Sort to count inversion pairs in an array. 
+//Two elements a[i] and a[j] form an inversion pair if a[i] > a[j] and i < j. 
+//Example: The sequence 2, 4, 1, 3, 5 has three inversions (2, 1), (4, 1), (4, 3). 
 #include<stdio.h>
 #include<stdlib.h>
  
@@ -14,7 +17,9 @@ while ((i < leftCount ) && (j < rightCount))
 		else       
 				{         
 					A[k++] = R[j++];           
-					inv_count = inv_count + (leftCount - i);   
+					inv_count = inv_count + (leftCount - i);
+//since we are taking values from right array,it means the values(remaining) of left array are smaller than it. 
+//Hence forming inversion pairs
 				}   
 }
 while(i < leftCount) A[k++] = L[i++];
