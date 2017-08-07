@@ -1,3 +1,5 @@
+//Apply Binary Search on 2D NxM array (A) having numbers stored in non-deceasing order under row-major scanning. 
+//Hint: k-th element = A[k/M][k % M] 
 #include <stdio.h>
 #include<stdlib.h>
  
@@ -24,7 +26,7 @@ int main(void) {
 				flag=1;
 				break;
 			}
-		else if(arr[mid/m][mid % m]<x)
+		else if(arr[mid/m][mid % m]<x) // since the array is sorted
 			low=mid+1;
 		else
 			high=mid-1;
