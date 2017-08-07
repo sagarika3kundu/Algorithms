@@ -1,3 +1,5 @@
+//Given a sorted array arr[] and a number x, write a function that counts the occurrences of x in arr[]. 
+//Expected time complexity is O(logn). 
 #include <stdio.h>
 #include<stdlib.h>
 //to find first occurence of x.
