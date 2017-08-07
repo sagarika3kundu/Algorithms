@@ -1,3 +1,5 @@
+// Given an array that represents elements of arithmetic progression in order. 
+//One element is missing in the progression, find the missing number. 
 #include <stdio.h>
 #include<stdlib.h>
 #define min(a,b) (a<b?a:b);
