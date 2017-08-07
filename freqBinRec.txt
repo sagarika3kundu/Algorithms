@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h>
-//to find first occurence of x
+//to find first occurence of x.
 int first(int arr[],int low,int high,int x,int n){
 if(high<low) return -3; //base condition
  
