@@ -12,7 +12,7 @@ int findMin(int arr[], int low, int high) {
 	if (arr[mid] < arr[mid - 1])       
 	return arr[mid];       
 	// Decide whether we need to go to left half or right half     
-	if (arr[high] > arr[mid])       
+	if (arr[high] > arr[mid])      //implies it is sorted and not rotated anywhere within.Hence we need to go to left half. 
 	return findMin(arr, low, mid-1);    
 	return findMin(arr, mid+1, high); 
 }   
