@@ -12,3 +12,5 @@ invPairs.c------- Apply Merge Sort to count inversion pairs in an array. Two ele
 sumBin.c---------  Given a sorted array and a number X, search two elements of array s.t. their sum is X. 
 
 twoDimArr.c------ Apply Binary Search on 2D NxM array (A) having numbers stored in non-deceasing order under row-major scanning. Hint: k-th element = A[k/M][k % M]  4
+
+median.c--------- Median of two sorted arrays: There are 2 sorted arrays A and B of size n each. Write an algorithm to find the median of the array obtained after merging the above 2 arrays (i.e. array of length 2n). The complexity should be O(log(n))
