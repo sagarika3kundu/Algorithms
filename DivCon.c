@@ -1,78 +1,73 @@
 //Finding second smallest and second largest element using Divide and Conquer
-#include<stdio.h>
-#include<stdlib.h>
+    #include<stdio.h>
+    #include<stdlib.h>
+    
+    #define min(a,b) ((a)<(b)?(a):(b))
+    #define max(a,b) ((a)>(b)?(a):(b))
+    
+    typedef struct pair{
+        int m1,    m2;    
+    } pair;
+    
+    pair* sec(int *arr,int l,int u){
+        int min1, min2, mid;
+        pair *p = (pair *)malloc(sizeof(pair));
+        printf("l= %d, u = %d\n", l, u);
+        int n = (u - l) + 1; 
+        if(n==2){
+            if(arr[l] > arr[u]){
+                min1 = arr[u];
+                min2 = arr[l];
+            } else {
+                min1 = arr[l];
+                min2 = arr[u];
+            }
 
-#define min(a,b) ((a)<(b)?(a):(b))
-#define max(a,b) ((a)>(b)?(a):(b))
-//leftCount is size of left array
-//rightCount is size of right array
-//the smallest size of array entering MergeDuo is 2 and largest is 3
-//we are modyfing in array A itself and replacing values at first 4 indices as smallest,second smallest,largest and second largest resp.
-void MergeDuo(int *A,int *L,int leftCount,int *R,int rightCount) {
-	int i,j,k;
-//to find second second smallest	
-	i = 0; j = 0; k =0;
-	while(k<2) {
-		if(L[i]  < R[j]) A[k++] = L[i++];
-		else A[k++] = R[j++];
-	}
-//to find second largest	
-	i=leftCount-1; j=rightCount-1;
-	while(k<4){
-		if(L[i] > R[j]) A[k++] = L[i--];
-		else A[k++] = R[j--];
-	}
-	}
+        }
+        else if (n == 1){
+            min1 = arr[l];
+            min2 = 99999999;    
 
-// Recursive function to sort an array of integers. 
-void Sort(int *A,int n) {
-	int mid,i, *L, *R;
-	if(n < 4) {
-		if(n==3){
-		int lo = min(min(A[0], A[1]), A[2]);
-   		int hi = max(max(A[0], A[1]), A[2]);
-    A[1]=A[0]+A[1]+A[2]-lo-hi;
-    A[0]= lo;
-    A[2] =hi;  }
-    else{
-    	A[0]=min(A[0], A[1]);
-    	A[1]=max(A[0], A[1]);
+        }
+        else {
+            pair *pl, *pr;
+            mid = (l+u)/2;
+            pl = sec(arr, l, mid);
+            pr = sec(arr,(mid+1),u);
+            if(pl->m1 < pr->m1){
+                min1 = pl->m1;
+                min2 = min(pl->m2, pr->m1);
+            } else {
+                min1 = pr->m1;
+                min2 = min(pl->m1, pr->m2);
+            }
+            free(pl);
+            free(pr);
+
+        }
+        p->m1 = min1;
+        p->m2 = min2;
+        printf("%d, %d\n", p->m1, p->m2);
+        getchar();
+        return p;
+
     }
-		return;} // base condition. If the array has less than four element sort it. 
-//the array will never have one element as we are not allowing 3
-	mid = n/2;  // find the mid index. 
 
-	// create left and right subarrays
-	// mid elements (from index 0 till mid-1) should be part of left sub-array 
-	// and (n-mid) elements (from mid to n-1) will be part of right sub-array
-	L = (int*)malloc(mid*sizeof(int)); 
-	R = (int*)malloc((n- mid)*sizeof(int)); 
-	
-	for(i = 0;i<mid;i++) L[i] = A[i]; // creating left subarray
-	for(i = mid;i<n;i++) R[i-mid] = A[i]; // creating right subarray
-
-	Sort(L,mid);  // sorting the left subarray
-	Sort(R,n-mid);  // sorting the right subarray
-	MergeDuo(A,L,mid,R,n-mid);  // Merging smallest,second smallest,largest,second largest among L and R into A
-        free(L);
-        free(R);
-}
-
-int main() {
-	int n;
-	printf("Enter the size of array\n");
-	scanf("%d",&n);
-	int A[n]; // creating an array of integers. 
-	int i,numberOfElements;
-	for(i=0;i<n;i++)
-		scanf("%d",&A[i]);
-	
-	numberOfElements = sizeof(A)/sizeof(A[0]); 
-
-	// Calling Sort to sort the array. 
-	Sort(A,numberOfElements);
-
-	//printing the second smallest and second largest
-	 printf("%d %d",A[1],A[3]);
-	return 0;
-}
+    int main() {
+        int n;
+        printf("Enter the size of array\n");
+        scanf("%d",&n);
+        int A[n]; // creating an array of integers. 
+        int i;
+        for(i=0;i<n;i++)
+            scanf("%d",&A[i]);
+        
+        
+    
+        // Calling Sort to sort the array. 
+        pair *p = sec(A, 0, n-1);
+    
+        //printing the smallest & second smallest
+         printf("%d %d",p->m1, p->m2);
+        return 0;
+    }
