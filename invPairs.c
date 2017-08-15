@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<stdlib.h>
  
-int inv_count = 0; 
+int inv_count = 0; //taken as global variable so that we need not add left part, right and merged inv_count values.
  
 void Merge(int *A,int *L,int leftCount,int *R,int rightCount) {
 	int i,j,k;
