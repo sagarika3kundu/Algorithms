@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int visited[7];
+int visited[1000];
 
 void bfsGraph(vector <int> adj[], int s){
 	int v,i;
