@@ -17,6 +17,8 @@ twoDimArr.c------ Apply Binary Search on 2D NxM array (A) having numbers stored 
 
 median.c--------- Median of two sorted arrays: There are 2 sorted arrays A and B of size n each. Write an algorithm to find the median of the array obtained after merging the above 2 arrays (i.e. array of length 2n). The complexity should be O(log(n))
 
-bfs.cpp---------- Breadth First Search of a Graph using STL.
+BFS.cpp---------- Breadth First Search of a Graph using STL.
 
-node_level.cpp--- Finding number of nodes at a given level 'x' in an undirected graph
+DFS.cpp---------- Depth First Search of a Graph using STL.
+
+node_level.cpp--- Finding number of nodes at a given level 'x' in an undirected graph ( BFS )
