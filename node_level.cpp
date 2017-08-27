@@ -1,3 +1,4 @@
+//this can be done using BFS as it traverses level wise.
 #include<bits/stdc++.h>
 using namespace std;
 
