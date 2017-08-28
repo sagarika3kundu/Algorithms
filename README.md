@@ -24,3 +24,5 @@ DFS.cpp---------- Depth First Search of a Graph using STL.
 node_level.cpp--- Finding number of nodes at a given level 'x' in an undirected graph ( BFS )
 
 unreach.cpp ----- Nodes not reachable from a source node 'x' using DFS (can be done using BFS)
+
+kruskal.cpp ----- Given a weighted undirected graph. Find the sum of weights of edges of a Minimum Spanning Tree.(Union function used here has O(n^2) time complexity)
