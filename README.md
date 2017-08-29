@@ -27,4 +27,4 @@ unreach.cpp ----- Nodes not reachable from a source node 'x' using DFS (can be d
 
 kruskal.cpp ----- Given a weighted undirected graph. Find the sum of weights of edges of a Minimum Spanning Tree.(Union function used here has O(n^2) time complexity)
 
-docs/countSort.c ----- Given an array of digits, sort them with time complexity O(n).
+Algorithms/countSort.c ----- Given an array of digits, sort them with time complexity O(n).
