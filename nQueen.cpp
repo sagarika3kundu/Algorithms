@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define n 8
-bool isSafe(int b[n][n], int r, int c){
+ 
+bool isSafe(int b[][100], int r, int c, int n){
 	int i, j;
 	for(i = 0; i < c; i++){
 		if(b[r][i])
@@ -17,18 +17,18 @@ bool isSafe(int b[n][n], int r, int c){
 	}
 	return true;
 }
-
-bool nQueen(int b[n][n],  int c){
+ 
+bool nQueen(int b[][100],  int c, int n){
 	if(c>=n)
 		return true;
 	int i;
 	for(i =0; i<n ; i++){
 		//if the row in the curent column is unsafe, we move to the next row.
-		if(isSafe(b, i, c)){
+		if(isSafe(b, i, c, n)){
 			//if the row in the curent column is safe, we mark it.
 		b[i][c] = 1;
 			//and proceed to the next column.
-		if(nQueen(b, c+1))
+		if(nQueen(b, c+1, n))
 			return true;
 			//we unmark the row if the next column can have no solution.
 		b[i][c] = 0;
@@ -37,10 +37,13 @@ bool nQueen(int b[n][n],  int c){
 		return false;
 }
 int main(){
+	int n;
+	cout << "enter the value of n\n";
+	cin >> n;
 	int i, j;
-	int b[8][8] = {0};
-	
-	if(!nQueen(b, 0)){
+	int b[100][100] = {0};
+ 
+	if(!nQueen(b, 0, n)){
 		cout << "solution does not exist\n";
 	}
 	else{
