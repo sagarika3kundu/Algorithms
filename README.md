@@ -31,4 +31,4 @@
 
 [permute.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/permute.cpp) ----- Print all permutations of a given string.
 
-[nQueen.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/nQueen.cpp) -------- The N-Queen Problem for fixed value value of n.
+[nQueen.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/nQueen.cpp) -------- The N-Queen Problem for fixed value of n.
