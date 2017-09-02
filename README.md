@@ -30,3 +30,5 @@
 [countSort.c](https://github.com/sagarika3kundu/Algorithms/blob/master/countSort.c) ----- Given an array of digits, sort them with time complexity O(n).
 
 [permute.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/permute.cpp) ----- Print all permutations of a given string.
+
+[nQueen.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/nQueen.cpp) -------- The N-Queen Problem for fixed value value of n.
