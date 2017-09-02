@@ -9,7 +9,7 @@ void swap(char *x, char *y){
 
 void permute(char *a, int l, int r){
 int i;
-if(l == r)
+if(l == r)                    //n-1 elements are at fixed place implies nth element is at fixed place.
 	{
 		for(i=0; i<=r; i++)
 			cout << a[i];
@@ -17,11 +17,11 @@ if(l == r)
 	}
 else{
 	
-	for(i= l; i <= r; i++ ){
+	for(i= l; i <= r; i++) {
 		swap((a+l), (a+i));
 		permute(a, l+1, r);
 		swap((a+l), (a+i));
-						}
+				}
 	}
 }
 
