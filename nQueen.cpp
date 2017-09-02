@@ -37,7 +37,6 @@ bool nQueen(int b[n][n],  int c){
 		return false;
 }
 int main(){
-	cout << "enter the value of n\n";
 	int i, j;
 	int b[8][8] = {0};
 	
