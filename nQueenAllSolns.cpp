@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int flag = 0;
+int flag = 0;                     //to check if there is any possible solution.
 bool isSafe(int b[][100], int r, int c, int n){
 	int i, j;
 	for(i = 0; i < c; i++){
@@ -20,7 +20,7 @@ bool isSafe(int b[][100], int r, int c, int n){
 
 void print(int b[][100], int n){
 	int i, j;
-	flag = 1;
+	flag = 1;              //implies we have atleast one possible solution so the output should not be "not possible"
 	for(i=0;i<n;i++){
 			for(j=0;j<n;j++)
 			cout << b[i][j] << " ";
