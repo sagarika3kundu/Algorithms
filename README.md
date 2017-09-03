@@ -25,7 +25,7 @@
 
 [unreach.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/unreach.cpp) ----- Nodes not reachable from a source node 'x' using DFS (can be done using BFS)
 
-[kruskal.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/kruskal.cpp) ----- Given a weighted undirected graph. Find the sum of weights of edges of a Minimum Spanning Tree.(Union function used here has O(n^2) time complexity)
+[kruskal.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/kruskal.cpp) ----- Given a weighted undirected graph find the sum of weights of edges of a Minimum Spanning Tree.(Union function used here has O(n^2) time complexity)
 
 [countSort.c](https://github.com/sagarika3kundu/Algorithms/blob/master/countSort.c) ----- Given an array of digits, sort them with time complexity O(n).
 
