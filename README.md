@@ -31,4 +31,6 @@
 
 [permute.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/permute.cpp) ----- Print all permutations of a given string.
 
-[nQueen.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/nQueen.cpp) -------- The N-Queen Problem where n is less than 100(assumed).
+[nQueen.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/nQueen.cpp) -------- The N-Queen Problem where n is less than a given value(assumed n < 100).
+
+[nQueenAllSolns.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/nQueenAllSolns.cpp)----- Printing all possible solutions of the N-Queen problem where n is less than a given value(assumed n < 100).
