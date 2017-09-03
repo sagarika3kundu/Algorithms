@@ -41,7 +41,7 @@ long long kruskal(int nodes, int edges){
 int main() {
 	int nodes, edges, i, x, y, w, minC = 0;
 	cin >> nodes >> edges;
-	vector <pair<int,int> > adj[nodes+1];
+	
 	for(i = 0; i < edges; i++){
 		cin >> x >> y >> w;
 		p[i] = make_pair(w, make_pair(x, y));
