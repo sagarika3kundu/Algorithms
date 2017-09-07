@@ -39,4 +39,4 @@
 
 [primPQ.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/primPQ.cpp) ------ Prim’s algorithm using priority_queue in STL
 
-[radixLexiSort.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/radixLexiSort.cpp)----- Arrange alist of words (each of equal length) using dictionary sorting strategy. (Hint : Radix Sort)
+[radixLexiSort.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/radixLexiSort.cpp)----- Arrange a list of words (each of equal length) using dictionary sorting strategy (Hint : Radix Sort).
