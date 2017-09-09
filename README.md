@@ -40,3 +40,5 @@
 [primPQ.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/primPQ.cpp) ------ Prim’s algorithm using priority_queue in STL
 
 [radixLexiSort.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/radixLexiSort.cpp)----- Arrange a list of words (each of equal length) using dictionary sorting strategy (Hint : Radix Sort).
+
+[dijkstra.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/dijkstra.cpp)-------------- Print Shortest Path and Distance using Dijkstra (using Multiset).
