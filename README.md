@@ -42,3 +42,5 @@
 [radixLexiSort.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/radixLexiSort.cpp)----- Arrange a list of words (each of equal length) using dictionary sorting strategy (Hint : Radix Sort).
 
 [dijkstra.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/dijkstra.cpp)-------------- Print Shortest Path and Distance using Dijkstra (using Multiset).
+
+[quickSort.c](https://github.com/sagarika3kundu/Algorithms/blob/master/quickSort.c) ------------ Apply quicksort on a 2D M*N matrix of numbers so that the numbers are sorted in a row-major fashion in the 2D matrix (without auxiliary array).
