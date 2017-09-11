@@ -1,6 +1,6 @@
 #include <stdio.h>
 int n;
- 
+//kth element in a M*N matrix (a[M][N]) is a[k/n][k%n]
 int partition(int a[][100], int start, int end){
 	int piv_elem = a[start/n][start%n];
 	int i = start + 1;
