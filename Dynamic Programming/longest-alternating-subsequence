@@ -1,0 +1,19 @@
+#include <iostream>
+#include<climits>
+#include<algorithm>
+using namespace std;
+int LAS(int a[], int n, bool flag, int prev){
+	if(n < 0) return 0;
+	int incl = 0;
+	int excl = 0;
+	if((flag && a[n] > prev) || (!flag && a[n] < prev))
+		incl = LAS(a, n-1, !flag, a[n]) + 1;
+	excl = LAS(a, n-1, flag, prev);
+	return max(incl, excl);
+}
+
+int main() {
+	int a[] = {8, 9, 6, 4, 5, 7, 3, 2, 4};
+	cout << LAS(a, 8, true, INT_MIN);
+	return 0;
+}
