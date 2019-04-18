@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+float prob(int x, int y, int n, int len){
+	if( x > len || y > len || n < 0 || x < 0 || y < 0) return 0;
+	if(n == 0) return 1;
+	float top = prob(x-1, y, n-1, len);
+	float down = prob(x+1, y, n-1, len);
+	float left = prob(x, y-1, n-1, len);
+	float right = prob(x, y+1, n-1, len);
+	return 0.25*(top+down+left+right);
+}
+int main() {
+	// your code goes here
+	cout << prob(0, 0, 3, 2);
+	return 0;
+}
