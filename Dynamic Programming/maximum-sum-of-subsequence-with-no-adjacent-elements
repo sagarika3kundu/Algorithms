@@ -1,0 +1,38 @@
+#include <iostream>
+#include <climits>
+#include <algorithm>
+using namespace std;
+
+int maxSum(int a[], int n){
+	if(n<0) return 0;
+	return max(maxSum(a, n-2)+a[n], maxSum(a, n-1));
+}
+int itrmaxSum(int a[], int n){
+	int dp[n+1][2];
+	dp[0][0] = 0;
+	dp[1][0] = a[0];
+	cout << "dp[1][0] is " << dp[1][0] << "a[0] is " << a[0] << '\n';
+	dp[0][1] = max(dp[0][0], dp[1][0]);
+	dp[1][1] = a[1];
+	int maxi = INT_MIN;
+	for(int i =2; i <= n; i++){
+		dp[0][i] = max(dp[0][i-1], dp[1][i-1]);
+		dp[1][i] = max(dp[0][i-2], dp[1][i-2]) + a[i];
+		maxi = max(maxi, max(dp[0][i], dp[1][i]));
+	}
+	for(int i =0; i < 2; i++){
+		for(int j =0; j <= n; j++)
+			cout << dp[i][j] << " "; 
+		cout << '\n';
+	}
+	cout << "dp[1][0] is " << dp[1][0] << '\n';
+	return maxi;
+}
+int main() {
+	// your code goes here
+	int a[] = {1, 2, 9, 4, 5, 0, 4, 11, 6};
+	cout << maxSum(a, 8) << '\n';
+	cout << itrmaxSum(a, 8) << '\n';
+	cout << a[0];
+	return 0;
+}
