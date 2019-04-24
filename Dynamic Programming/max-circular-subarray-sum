@@ -1,0 +1,37 @@
+#include <iostream>
+#include <algorithm>
+#include <climits>
+using namespace std;
+
+int maxCirSum(int a[], int n){
+    int sum, curr, glob_max, glob_min;
+    sum = curr = 0;
+    glob_max = INT_MIN;
+    glob_min = INT_MAX;
+    for(int i =0; i < n; i++)
+        sum+=a[i];
+    for(int i = 0; i < n; i++){
+        curr = max(a[i], curr+a[i]);
+        if(curr > glob_max) glob_max = curr;
+    }
+    curr = 0;
+    for(int i = 0; i < n; i++){
+        curr = min(a[i], curr+a[i]);
+        if(curr < glob_min) glob_min = curr;
+    }
+    if(sum - glob_min == 0) return glob_max;
+    return max(glob_max, sum-glob_min);
+}
+
+int main() {
+	int t, n;
+	cin >> t;
+	while(t--){
+	    cin >> n;
+	    int a[n];
+	    for(int i = 0; i < n; i++)
+	        cin >> a[i];
+	    cout << maxCirSum(a, n) << '\n';
+	}
+	return 0;
+}
