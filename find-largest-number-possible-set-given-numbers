@@ -1,0 +1,19 @@
+#include <iostream>
+#include <algorithm>
+#include <string>
+#include <vector>
+using namespace std;
+struct{
+	bool operator()(string a, string b){
+		string x = a + b;
+		string y = b + a;
+		return x > y;
+	}
+}cusCompare;
+int main() {
+	vector<string> num = { "10", "68", "97", "9", "21", "12" };
+	sort(num.begin(), num.end(), cusCompare);
+	for(auto i: num)
+		cout << i << " ";
+	return 0;
+}
