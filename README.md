@@ -44,3 +44,5 @@
 [dijkstra.cpp](https://github.com/sagarika3kundu/Algorithms/blob/master/dijkstra.cpp)-------------- Print Shortest Path and Distance using Dijkstra (using Multiset).
 
 [quickSort.c](https://github.com/sagarika3kundu/Algorithms/blob/master/quickSort.c) ------------ Apply quicksort on a 2D M*N matrix of numbers so that the numbers are sorted in a row-major fashion in the 2D matrix (without auxiliary array).
+
+[find-largest-number-possible-set-given-numbers](https://github.com/sagarika3kundu/Algorithms/blob/master/find-largest-number-possible-set-given-numbers)Given an array of numbers, arrange them in a way that yields the largest value. For example, if the given numbers are {54, 546, 548, 60}, the arrangement 6054854654 gives the largest value.
