@@ -1,0 +1,34 @@
+{
+    "section2": [
+        {
+            "image": "griffith.jpg",
+            "heading": "Griffith Observatory",
+            "text": "Griffith Observatory is southern California's gateway to the cosmos! Visitors may look through telescopes, explore exhibits, see live shows in the Samuel Oschin Planetarium, and enjoy spectacular views of Los Angeles and the Hollywood Sign."
+        },
+        {
+            "image": "mountains.jpg",
+            "heading": "Mountains",
+            "text": "Soaring high above the Los Angeles Basin, the San Gabriel Mountains serves as the backyard to the nation's second-largest urban center. This chaparral-cloaked land of steep ridges and V-shaped canyons is one of the wildest remaining areas in the surrounding Angeles National Forest"
+        },
+        {
+            "image": "universalstudios.jpg",
+            "heading": "Universal Studios",
+            "text": "Find a full day of action-packed entertainment all in one place: thrilling Theme Park rides and shows, a real working movie studio, and Los Angeles' best shops, restaurants and cinemas at CityWalk. Universal Studios Hollywood is a unique experience that's fun for the whole family."
+        }
+    ],
+    "section3":{
+        "text": ["Los Angeles is the City of Dreams and is the heart of southern California. It is a vast and varied geographic entity. The city is famous  for being the home of the rich and famous, Hollywood, the main home of major entertainment companies, ethnically diverse, and the second-largest city in America.","The residents of Los Angeles are called Angelenos. Their lifestyle relies on the automobile, idealizes the single-family dwelling, and favours informality. With notable exceptions, the skyline is primarily horizontal rather than vertical. Los Angeles is a place of extraordinary ethnic and racial diversity, owing largely to immigration. It is a must visit place and a beautiful vacation desination."]
+    },
+    "section4":[
+        {
+            "image": "hollywood.jpg",
+            "heading": "Hollywood",
+            "text": "No trip to Los Angeles is complete without a visit to Hollywood, the home of movie studios, many of LA's most popular and historic tourist destinations, and its world-famous namesake boulevard. A larger-than-life symbol of the entertainment business, Hollywood beckons tourists with landmarks like TCL Chinese Theatre and star-studded Walk of Fame. Many tourists come to Hollywood to see all of these things. Because of the importance of Hollywood in the movie industry of the United States, the whole industry is often called \"Hollywood\", even though not all movies are made in Hollywood."  
+        },
+        {
+            "image": "beach.jpg",
+            "heading": "Beaches",
+            "text": "One of the biggest draws of the Los Angeles area is the beach scene (especially when you've had enough of the traffic). Los Angeles may possibly be the American city with the best overall variety of local beaches. There are a wide range of beaches within the large confines of Los Angeles County, and the county also neighbors miles and miles of other beach cities, spreading both north and south of LA. Families may enjoy large beaches like Santa Monica or Redondo Beach, with a wide range of facilities, retail areas, and amenities, while adventurers may like more secluded beaches like those found in Malibu or Palos Verdes."  
+        }
+    ]
+}
